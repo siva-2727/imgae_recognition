@@ -1,11 +1,11 @@
 
-# 🛠️ Problem Solving Guide - Python Image Analyzer
+#  Problem Solving Guide - Python Image Analyzer
 
 This guide helps troubleshoot common issues encountered when running the image analysis script using ResNet50 and BLIP models.
 
 ---
 
-## ✅ Dependencies Not Found
+##  Dependencies Not Found
 
 **Symptoms:**
 - `ModuleNotFoundError: No module named 'torch'`
@@ -20,7 +20,7 @@ pip install torch torchvision transformers Pillow
 
 ---
 
-## 📥 BLIP Model Loads Slowly or Freezes
+##  BLIP Model Loads Slowly or Freezes
 
 **Symptoms:**
 - Long wait during model loading
@@ -36,20 +36,20 @@ out = caption_model.generate(**inputs, max_new_tokens=20)
 
 ---
 
-## 📁 FileNotFoundError: imagenet-simple-labels.json
+##  FileNotFoundError: imagenet-simple-labels.json
 
 **Symptoms:**
 - Script crashes with missing labels file
 
 **Solution:**
 Download `imagenet-simple-labels.json` from:
-👉 https://github.com/anishathalye/imagenet-simple-labels/blob/master/imagenet-simple-labels.json
+https://github.com/anishathalye/imagenet-simple-labels/blob/master/imagenet-simple-labels.json
 
 Save it in the **same directory** as your Python script.
 
 ---
 
-## 🖼️ Image Not Found or Not Displaying
+## Image Not Found or Not Displaying
 
 **Symptoms:**
 - FileNotFoundError: uploads/pexels-photo-170811.jpeg
@@ -66,7 +66,7 @@ image = Image.open(image_path).convert("RGB")
 
 ---
 
-## 🧠 Model Inference Is Too Slow?
+##  Model Inference Is Too Slow?
 
 **Solution:**
 - Use `ResNet18` for faster performance.
@@ -75,7 +75,7 @@ image = Image.open(image_path).convert("RGB")
 
 ---
 
-## 🧪 Debugging Tips
+##  Debugging Tips
 
 - Add print statements to trace which step is failing.
 - Log `image_path` before using it.
@@ -83,7 +83,7 @@ image = Image.open(image_path).convert("RGB")
 
 ---
 
-## 💬 Need Help?
+## Need Help?
 
 Share:
 - The full error message
